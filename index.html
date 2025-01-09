@@ -10,32 +10,33 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #fff;
+            background-color: #000;
         }
 
         header {
-            background: #0073e6;
+            background: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         nav {
-            background: #005bb5;
+            background: #444;
             overflow: hidden;
         }
 
         nav a {
             float: left;
             display: block;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
         }
 
         nav a:hover {
-            background: #004494;
+            background: #555;
         }
 
         .container {
@@ -44,7 +45,7 @@
 
         .motion-box {
             padding: 20px;
-            background-color: #f3f3f3;
+            background-color: #222;
             border-radius: 8px;
             display: inline-block;
             animation: pulse 2s infinite;
@@ -66,7 +67,7 @@
 
         footer {
             text-align: center;
-            background: #0073e6;
+            background: #333;
             color: #fff;
             padding: 10px;
             margin-top: 20px;
@@ -84,26 +85,49 @@
         }
 
         .featured-story {
-            background-color: #e9f5ff;
+            background-color: #111;
             padding: 15px;
             border-radius: 10px;
             margin-top: 20px;
+        }
+
+        .home-banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .home-banner img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3, p {
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Your Blood Pressure Measurement Device</h1>
+        <h1>Welcome to iWell Health Uganda</h1>
     </header>
 
     <nav>
+        <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#blog">Blog</a>
         <a href="#partners">Partners</a>
         <a href="#product">Product Design</a>
         <a href="#launch">Launching Soon</a>
     </nav>
+
+    <div class="container" id="home">
+        <h2>Home</h2>
+        <div class="home-banner">
+            <img src="https://via.placeholder.com/800x400?text=Black+Man+Wearing+a+Watch" alt="Black old man wearing a watch">
+        </div>
+        <p>Discover innovative health solutions designed for your wellbeing.</p>
+    </div>
 
     <div class="container" id="about">
         <h2>About Us</h2>
