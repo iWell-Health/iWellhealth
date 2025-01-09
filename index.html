@@ -10,105 +10,74 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #fff;
-            background-color: #000;
+            color: #000;
+            background-color: #fff;
         }
 
         header {
-            background: #333;
-            color: #fff;
+            background: #fff;
+            color: #000;
             padding: 20px;
             text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+            margin: 0;
+            padding: 20px;
         }
 
         nav {
-            background: #444;
+            background: #ccc;
             overflow: hidden;
         }
 
         nav a {
             float: left;
             display: block;
-            color: #fff;
+            color: #000;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
         }
 
         nav a:hover {
-            background: #555;
+            background: #ddd;
         }
 
         .container {
             padding: 20px;
         }
 
-        .motion-box {
-            padding: 20px;
-            background-color: #222;
-            border-radius: 8px;
-            display: inline-block;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
         footer {
             text-align: center;
-            background: #333;
-            color: #fff;
+            background: #ccc;
+            color: #000;
             padding: 10px;
             margin-top: 20px;
         }
 
-        .partners img {
-            width: 150px;
-            margin: 10px;
-        }
-
-        .blog img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .featured-story {
-            background-color: #111;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        .home-banner {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .home-banner img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        h1, h2, h3, p {
-            color: #fff;
+        h2, h3, p {
+            color: #000;
         }
     </style>
 </head>
 
 <body>
     <header>
+        <img src="/mnt/data/Air Pump.jpeg" alt="Landing Page Image">
         <h1>Welcome to iWell Health Uganda</h1>
     </header>
 
@@ -123,9 +92,6 @@
 
     <div class="container" id="home">
         <h2>Home</h2>
-        <div class="home-banner">
-            <img src="https://via.placeholder.com/800x400?text=Black+Man+Wearing+a+Watch" alt="Black old man wearing a watch">
-        </div>
         <p>Discover innovative health solutions designed for your wellbeing.</p>
     </div>
 
@@ -138,29 +104,16 @@
         <h2>Blog</h2>
         <h3>The Journey Behind iWell: Innovating Health Monitoring for a Better Tomorrow</h3>
         <p>The story of iWell begins with two passionate innovators, Innocent Menyo and Noah Ronald Ggayi, who share a vision to transform how individuals monitor and manage their health...</p>
-
-        <div class="featured-story">
-            <h3>Featured: African Impact Initiative Challenge</h3>
-            <p>Read Menyo Innocent's story from the <a href="https://www.utsc.utoronto.ca/thebridge/african-impact-initiative-challenge-2023-winners" target="_blank">University of Toronto</a> and explore the <a href="https://www.africanimpact.ca/blog" target="_blank">African Impact Initiative Blog</a>.</p>
-            <img src="/mnt/data/AII-logo.png" alt="African Impact Initiative Logo">
-        </div>
     </div>
 
     <div class="container" id="partners">
         <h2>Partners</h2>
-        <div class="partners">
-            <img src="/mnt/data/H2i Logo.PNG" alt="H2i Logo">
-            <img src="/mnt/data/AII-logo.png" alt="African Impact Initiative Logo">
-        </div>
+        <p>Meet our valued partners in bringing innovation to life.</p>
     </div>
 
     <div class="container" id="product">
         <h2>Product Design</h2>
-        <div class="motion-box">
-            <h3>Monitor Your Blood Pressure 24/7</h3>
-            <p>The iWell device is a modern, sophisticated blood pressure monitor crafted to fit effortlessly into a hectic lifestyle, offering dependable health insights with ease.</p>
-            <img src="/mnt/data/Capture.PNG" alt="iWell Blood Pressure Monitor">
-        </div>
+        <p>The iWell device is a modern, sophisticated blood pressure monitor crafted to fit effortlessly into a hectic lifestyle, offering dependable health insights with ease.</p>
     </div>
 
     <div class="container" id="launch">
