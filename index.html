@@ -1,129 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iWell Health Uganda</title>
+    <title>iWell Health</title>
     <style>
         body {
+            background-color: white;
+            color: black;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #000;
-            background-color: #fff;
         }
-
-        header {
-            background: #fff;
-            color: #000;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-
-        header img {
-            width: 100%;
-            max-height: 100vh;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-
-        header h1 {
-            font-size: 3em;
-            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
-            margin: 0;
-            padding: 20px;
-        }
-
-        nav {
-            background: #ccc;
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: #000;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background: #ddd;
-        }
-
         .container {
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
         }
-
-        footer {
+        header {
             text-align: center;
-            background: #ccc;
-            color: #000;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 20px 0;
         }
-
-        h2, h3, p {
-            color: #000;
+        header h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <img src="/mnt/data/Air Pump.jpeg" alt="Landing Page Image">
-        <h1>Welcome to iWell Health Uganda</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>iWell Health</h1>
+            <p>Your blood pressure measurement device</p>
+        </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#blog">Blog</a>
-        <a href="#partners">Partners</a>
-        <a href="#product">Product Design</a>
-        <a href="#launch">Launching Soon</a>
-    </nav>
+        <section>
+            <h2>Our Story</h2>
+            <p>The story of iWell begins with two passionate innovators, Innocent Menyo and Noah Ronald Ggayi, who share a vision to transform how individuals monitor and manage their health. Hailing from Uganda, these visionary co-founders bring a unique blend of medical expertise, entrepreneurial drive, and a deep commitment to improving healthcare access worldwide.</p>
+            <p>Their flagship innovation, the iWell Bio Tracker, is a game-changing wearable device designed to address one of the world’s silent killers: high blood pressure. Innocent often highlights the critical importance of early awareness, stating, “The real risk lies in not knowing your blood pressure status. Many patients only seek help when complications are already severe.”</p>
+        </section>
 
-    <div class="container" id="home">
-        <h2>Home</h2>
-        <p>Discover innovative health solutions designed for your wellbeing.</p>
+        <section>
+            <h2>About the iWell Bio Tracker</h2>
+            <p>The iWell Bio Tracker is more than just a device; it’s a lifeline. This sleek watch continuously monitors blood pressure, empowering individuals to take control of their health. For doctors, it offers a seamless way to track patients’ blood pressure trends using advanced AI technology, providing clear and actionable insights. Additionally, the device helps reduce "white coat hypertension," a phenomenon where patients' blood pressure spikes in clinical settings due to anxiety.</p>
+        </section>
+
+        <section>
+            <h2>Future Innovations</h2>
+            <p>Building on their success, iWell is excited to soon launch a new version of the Bio Tracker designed specifically for the detection of pre-eclampsia, a serious pregnancy-related condition linked to high blood pressure. This new iteration will provide a vital tool for expectant mothers and healthcare providers, enabling earlier detection and management of pre-eclampsia, ultimately improving maternal and fetal health outcomes.</p>
+        </section>
     </div>
-
-    <div class="container" id="about">
-        <h2>About Us</h2>
-        <p>Your trusted wrist wearable devices for scheduled blood pressure checks.</p>
-    </div>
-
-    <div class="container" id="blog">
-        <h2>Blog</h2>
-        <h3>The Journey Behind iWell: Innovating Health Monitoring for a Better Tomorrow</h3>
-        <p>The story of iWell begins with two passionate innovators, Innocent Menyo and Noah Ronald Ggayi, who share a vision to transform how individuals monitor and manage their health...</p>
-    </div>
-
-    <div class="container" id="partners">
-        <h2>Partners</h2>
-        <p>Meet our valued partners in bringing innovation to life.</p>
-    </div>
-
-    <div class="container" id="product">
-        <h2>Product Design</h2>
-        <p>The iWell device is a modern, sophisticated blood pressure monitor crafted to fit effortlessly into a hectic lifestyle, offering dependable health insights with ease.</p>
-    </div>
-
-    <div class="container" id="launch">
-        <h2>Launching Soon</h2>
-        <p>The iWell device for pre-eclampsia mothers is coming soon. Stay tuned for updates!</p>
-    </div>
-
-    <footer>
-        <p>Copyright &copy; 2025 iWell Health Uganda</p>
-    </footer>
 </body>
-
 </html>
