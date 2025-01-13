@@ -5,91 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iWell Health</title>
     <style>
-        body {
-            background-color: white;
-            color: black;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Basic Reset */
+        body, html {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
+
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
             text-align: center;
-            padding: 20px 0;
-        }
-        header h1 {
+            background-color: #333;
             margin: 0;
         }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px;
         }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin: 20px 0;
-        }
-        .landing-image {
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        button {
-            background-color: #4CAF50;
+
+        nav ul li a {
             color: white;
-            border: none;
+            text-decoration: none;
             padding: 10px 20px;
-            font-size: 16px;
-            margin-top: 10px;
-            cursor: pointer;
+            display: inline-block;
+            font-size: 1.2em;
         }
-        button:hover {
-            background-color: #45a049;
+
+        nav ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Landing Page Section */
+        .landing-page {
+            background-image: url('https://images.unsplash.com/photo-1673372316742-57c84d7e63c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGlwZSUyMG9yZ2FufGVufDB8fDB8fHww');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .headline {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3em;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        /* Contact Us Section */
+        .contact-us {
+            background-color: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-us h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-us p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Our Impact Section */
+        .impact {
+            padding: 40px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .impact iframe {
+            width: 80%;
+            height: 500px;
+            border: none;
+        }
+
+        /* Moving Text */
+        .moving-text {
+            text-align: center;
+            font-size: 1.5em;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: sticky;
+            top: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>iWell Health</h1>
-            <p>Your blood pressure measurement device</p>
-        </header>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <section id="home">
-            <img class="landing-image" src="https://i.postimg.cc/wydjd9tF" alt="iWell Bio Tracker">
-            <h2>Our Story</h2>
-            <p>The story of iWell begins with two passionate innovators, Innocent Menyo and Noah Ronald Ggayi, who share a vision to transform how individuals monitor and manage their health. Hailing from Uganda, these visionary co-founders bring a unique blend of medical expertise, entrepreneurial drive, and a deep commitment to improving healthcare access worldwide.</p>
-            <p>Their flagship innovation, the iWell Bio Tracker, is a game-changing wearable device designed to address one of the world’s silent killers: high blood pressure. Innocent often highlights the critical importance of early awareness, stating, “The real risk lies in not knowing your blood pressure status. Many patients only seek help when complications are already severe.”</p>
-            <button onclick="alert('Learn more about our innovative solutions!')">Learn More</button>
-        </section>
-
-        <section id="about">
-            <h2>About the iWell Bio Tracker</h2>
-            <p>The iWell Bio Tracker is more than just a device; it’s a lifeline. This sleek watch continuously monitors blood pressure, empowering individuals to take control of their health. For doctors, it offers a seamless way to track patients’ blood pressure trends using advanced AI technology, providing clear and actionable insights. Additionally, the device helps reduce "white coat hypertension," a phenomenon where patients' blood pressure spikes in clinical settings due to anxiety.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:iwellhealth@gmail.com">iwellhealth@gmail.com</a></p>
-        </section>
+    <!-- Landing Page Section -->
+    <div class="landing-page" id="home">
+        <div class="overlay"></div>
+        <div class="headline">Schola Angelica - Where Youth Thrive Through Music</div>
     </div>
+
+    <!-- Moving Text Section -->
+    <div class="moving-text">
+        Empowering underprivileged youth through music education.
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>The story of iWell begins with two passionate innovators, Innocent Menyo and Noah Ronald Ggayi, who share a vision to transform how individuals monitor and manage their health. Hailing from Uganda, these visionary co-founders bring a unique blend of medical expertise, entrepreneurial drive, and a deep commitment to improving healthcare access worldwide.</p>
+        <p>Their flagship innovation, the iWell Bio Tracker, is a game-changing wearable device designed to address one of the world’s silent killers: high blood pressure. Innocent often highlights the critical importance of early awareness, stating, “The real risk lies in not knowing your blood pressure status. Many patients only seek help when complications are already severe.”</p>
+        <p>The iWell Bio Tracker is more than just a device; it’s a lifeline. This sleek watch continuously monitors blood pressure, empowering individuals to take control of their health. For doctors, it offers a seamless way to track patients’ blood pressure trends using advanced AI technology, providing clear and actionable insights. Additionally, the device helps reduce "white coat hypertension," a phenomenon where patients' blood pressure spikes in clinical settings due to anxiety.</p>
+        <p>Building on their success, iWell is excited to soon launch a new version of the Bio Tracker designed specifically for the detection of pre-eclampsia, a serious pregnancy-related condition linked to high blood pressure. This new iteration will provide a vital tool for expectant mothers and healthcare providers, enabling earlier detection and management of pre-eclampsia, ultimately improving maternal and fetal health outcomes.</p>
+    </div>
+
+    <!-- Our Impact Section -->
+    <div class="impact" id="impact">
+        <h2>Our Impact</h2>
+        <p>A glimpse of one of our students performing</p>
+        <iframe src="https://www.youtube.com/embed/N6RUZZhDMDs" allowfullscreen></iframe>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:scholaangelica@gmail.com">scholaangelica@gmail.com</a></p>
+        <p>Phone: <a href="tel:+256700903657">+256 700 903 657</a></p>
+    </div>
+
 </body>
 </html>
