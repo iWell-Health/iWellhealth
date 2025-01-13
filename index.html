@@ -23,7 +23,7 @@
 
         nav ul li {
             display: inline-block;
-            margin: 10px;
+            margin: 0; /* Removed unnecessary 10px margin */
         }
 
         nav ul li a {
@@ -63,6 +63,7 @@
             transform: translate(-50%, -50%);
             color: white;
             font-size: 3em;
+            text-align: center; /* Added for better alignment */
         }
 
         /* About Us Section */
@@ -101,6 +102,15 @@
             line-height: 1.6;
         }
 
+        .contact-us a {
+            color: #333; /* Ensure link color contrasts with the background */
+            text-decoration: none;
+        }
+
+        .contact-us a:hover {
+            text-decoration: underline;
+        }
+
         /* Product Section */
         .product {
             background-color: #fff;
@@ -128,6 +138,7 @@
             color: white;
             position: sticky;
             top: 0;
+            z-index: 1000; /* Added to ensure the text remains on top */
         }
     </style>
 </head>
